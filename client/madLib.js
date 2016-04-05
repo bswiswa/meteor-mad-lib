@@ -27,6 +27,11 @@ Template.body.events({
 	const verb = target.verb.value;
 
 	const madLib = `'${exclamation}' you say as you jump ${adverb} onto your ${animal} as you ${verb} into the sunset`;
-	console.log(madLib);
+	//console.log(madLib);
+
+	$('#page-title').hide();
+	$('#page-title').text(madLib).fadeIn(900).css("color", "#0000ff");
+
+
 	}
 });
